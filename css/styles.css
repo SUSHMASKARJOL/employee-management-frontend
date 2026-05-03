@@ -1,0 +1,166 @@
+body {
+    background:
+        radial-gradient(circle at top right, rgba(13, 110, 253, 0.14), transparent 28%),
+        linear-gradient(180deg, #f7f9fc 0%, #eef3f8 100%);
+    min-height: 100vh;
+}
+
+.auth-shell,
+.auth-card,
+.metric-card,
+.card {
+    border-radius: 1rem;
+}
+
+.auth-shell-copy {
+    background:
+        linear-gradient(160deg, rgba(13, 110, 253, 0.12), rgba(13, 202, 240, 0.1)),
+        #f8fbff;
+}
+
+.auth-eyebrow {
+    display: inline-flex;
+    width: fit-content;
+    padding: 0.35rem 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 999px;
+    background: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.auth-toggle,
+.nav-pills-shell {
+    display: inline-flex;
+    gap: 0.5rem;
+    padding: 0.35rem;
+    border-radius: 999px;
+    background: rgba(13, 110, 253, 0.08);
+}
+
+.auth-toggle-btn,
+.workspace-nav-btn {
+    border: 0;
+    border-radius: 999px;
+    color: #0d6efd;
+    font-weight: 600;
+    padding: 0.65rem 1.2rem;
+}
+
+.auth-toggle-btn.active,
+.workspace-nav-btn.active {
+    background: #0d6efd;
+    color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(13, 110, 253, 0.22);
+}
+
+.auth-panel .form-control,
+.auth-panel .form-select,
+#employeesPage .form-control,
+#employeesPage .form-select {
+    border-radius: 0.85rem;
+    min-height: 2.9rem;
+}
+
+.metric-label {
+    color: #6c757d;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.metric-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0d6efd;
+}
+
+.department-chart {
+    display: grid;
+    gap: 1rem;
+}
+
+.chart-row {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.chart-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.chart-track {
+    height: 0.9rem;
+    border-radius: 999px;
+    background: rgba(13, 110, 253, 0.1);
+    overflow: hidden;
+}
+
+.chart-bar {
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #0d6efd, #20c997);
+}
+
+.pagination .page-link {
+    border-radius: 999px;
+    margin-right: 0.35rem;
+    border: none;
+    color: #0d6efd;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: rgba(13, 110, 253, 0.03);
+}
+
+.breakdown-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.empty-state {
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #6c757d;
+}
+
+@media (max-width: 991px) {
+    .auth-shell-copy {
+        min-height: 220px;
+    }
+}
+
+@media (max-width: 767px) {
+    .metric-value {
+        font-size: 1.6rem;
+    }
+
+    .chart-meta,
+    .d-flex.justify-content-between.align-items-center {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .auth-toggle,
+    .nav-pills-shell {
+        width: 100%;
+    }
+
+    .auth-toggle-btn,
+    .workspace-nav-btn {
+        flex: 1;
+    }
+}
